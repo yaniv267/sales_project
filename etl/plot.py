@@ -32,7 +32,7 @@ def plot_sales_over_time(df, CHARTS_DIR="output/charts"):
 
     #  Titles and labels
     plt.title('Quarterly Net Sales Trend', fontsize=16)
-    plt.xlabel('Quarter')
+    plt.xlabel('Quarter/Year')
     plt.ylabel('Net Sales')
     plt.tight_layout()
 

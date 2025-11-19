@@ -10,8 +10,6 @@ def load_data_to_csv(df: pd.DataFrame, file_name: str, index_col: bool = False) 
       Saves the cleaned DataFrame to a CSV file in the output directory.
     It reports the file's dimensions ( and the full path where the file was saved.
       """
-    # print("==== DEBUG LOAD ====")
-    # print("First 10 rows:\n", df.head(10))
     rows, cols = df.shape
     # print(df.shape)
 

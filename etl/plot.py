@@ -83,7 +83,7 @@ def plot_top_net_sales_products(df, CHARTS_DIR="output/charts"):
     output_file = os.path.join(CHARTS_DIR, 'Top_10_Products_By_NetSales.png')
     plt.savefig(output_file)
     plt.close()
-    print("[PLOT] Generated 3. Top 10 Products by Net Sales")
+    print("[PLOT] Generated 2. Top 10 Products by Net Sales")
 
 def plot_top_returned_products(df, CHARTS_DIR="output/charts"):
         """
@@ -117,7 +117,9 @@ def plot_top_returned_products(df, CHARTS_DIR="output/charts"):
         plt.ylabel('Product Description')
         plt.tight_layout()
         # Save chart
-        output_file = os.path.join(CHARTS_DIR, 'Top_10_Returned_Products.png')
+        output_file = os.path.join(CHARTS_DIR, 'Top_10_Returned_Products')
         plt.savefig(output_file)
         plt.close()
-        print(f"[PLOT] Generated 2: Top 10 Returned Products.png")
+        print(f"[PLOT] Generated 3: Top 10 Returned Products")
+
+        print(f"[PLOT] All charts are located at the path: {CHARTS_DIR}")

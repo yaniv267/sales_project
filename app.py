@@ -23,8 +23,8 @@ def main ():
 
     # Step 5: Plots
     plot_sales_over_time(df_transformed)
-    plot_top_returned_products(df_transformed)
     plot_top_net_sales_products(df_transformed)
+    plot_top_returned_products(df_transformed)
 
     # Personal message
     print("===" * 50)

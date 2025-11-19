@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 # Define Paths
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = PATH(__file__).resolve().parent.parent
 OUTPUT_BASE_PATH = BASE_DIR / "output"  # לא יוצר תיקייה
 INPUT_FILE = OUTPUT_BASE_PATH / "cleaned_data.csv"
 SUMMARY_FILE = OUTPUT_BASE_PATH / "summary.csv"
@@ -50,15 +50,7 @@ def generate_kpi_summary(df, format_func):
         Kpi_average_order_value = Kpi_total_net_sales / Kpi_total_orders
         Kpi_average_net_item_price = Kpi_total_net_sales / Kpi_total_quantity_sold
         Kpi_total_return_value = df[df['IsReturn'] == 1]['NetSales'].sum().astype(int)
-        # print(f"Total Net Sales: {Kpi_total_net_sales:,.0f}")
-        # print(f"Return Rate: {Kpi_return_rate:.0%}")
-        # print(f"Total Orders: {Kpi_total_orders:,.0f}")
-        # print(f"Credit Note Rate: {Kpi_credit_note_rate:.2%}")
-        # print(f"Unique Customers: {Kpi_unique_customers:,.0f}")
-        # print(f"Orders per customer: {Kpi_orders_per_customer:,.1f}")
-        # print(f"Total Quantity Sold: {Kpi_total_quantity_sold:,.0f}")
-        # print(f"Average Order Value: {Kpi_average_order_value:.0f}")
-        # print(f"Average Net Sales: {Kpi_average_net_item_price:.2f}")
+
 
         #  Create and Save summary.csv
         Kpi_df = pd.DataFrame({

@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 # Define Paths
-BASE_DIR = PATH(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_BASE_PATH = BASE_DIR / "output"  # לא יוצר תיקייה
 INPUT_FILE = OUTPUT_BASE_PATH / "cleaned_data.csv"
 SUMMARY_FILE = OUTPUT_BASE_PATH / "summary.csv"
